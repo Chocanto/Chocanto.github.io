@@ -56,7 +56,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header {
+    background-color: #2F2F2F;
+    color: white;
+    height: 200px;
+    padding-right: 20px;
+    position: relative;
+}
 
+header > h1 {
+    margin: 0;
+    text-align: right;
+    font-size: 60px;
+    text-transform: uppercase; 
+    letter-spacing: 15px;
+}
+
+header > h2 {
+    margin-top: 0;
+    text-align: right;
+    color: #A0A0A0;
+}
 
 
 
