@@ -1,0 +1,10 @@
+timezone: Europe/Paris
+
+defaults:
+    -
+     scope:
+         path: ""
+         type: "posts"
+     values:
+         author: "Anthony Granger"
+         layout: "default"
