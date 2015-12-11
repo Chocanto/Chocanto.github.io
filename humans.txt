@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Anthony Granger
+
+# Yup i'm alone... and ? This is my website right ?
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll <3
+    HTML5, CSS3
+    jQuery, Modernizr
