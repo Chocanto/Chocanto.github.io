@@ -1,5 +1,7 @@
 name: Chocanto
 
+paginate: 3
+
 timezone: Europe/Paris
 
 defaults:
@@ -10,3 +12,5 @@ defaults:
      values:
          author: "Anthony Granger"
          layout: "default"
+
+gems: ["jekyll-paginate"]
