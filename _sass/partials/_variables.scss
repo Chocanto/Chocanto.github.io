@@ -1,0 +1,14 @@
+$color-main-green: rgb(124, 179, 66);
+$color-light-grey: #E4E4E4;
+$color-light-dark: #303030;
+
+//Header
+$color-header-background: $color-main-green;
+$color-header-title: white;
+$color-header-subtitle: $color-light-grey;
+$color-social-font: $color-light-dark;
+$color-social-background: $color-light-grey;
+$color-social-background-hover: darken($color-light-grey, 10%);
+$color-social-background-active: darken($color-light-grey, 20%);
+
+$size-social-button: 40px;

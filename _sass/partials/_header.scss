@@ -1,7 +1,6 @@
 header {
-    background-color: rgb(124, 179, 66);
-    color: white;
-    height: 400px;
+    background-color: $color-header-background;
+    min-height: 400px;
     position: relative;
 }
 
@@ -11,14 +10,45 @@ header > h1 {
     text-transform: uppercase; 
     letter-spacing: 15px;
     font-family: 'Roboto Slab', serif;
+    color: $color-header-title;
 }
 
 header > h2 {
     margin-top: 0;
     text-align: center;
-    color: #E4E4E4;
     font-family: 'Noto Serif', serif;
     font-size: 3rem;
+    color: $color-header-subtitle;
+}
+
+.social {
+    position: absolute;
+    bottom: -$size-social-button/2;
+    right: 10px;
+    font-size: 30px;
+}
+
+.social a {
+    color: $color-social-font;
+    background-color: $color-social-background;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px #888;
+    display: inline-block;
+    height: $size-social-button;
+    width: $size-social-button;
+    border-radius: 100px;
+    line-height: 37px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.social a:hover {
+    background-color: $color-social-background-hover;
+    box-shadow: 0px 1px 5px #888;
+}
+
+.social a:active {
+    background-color: $color-social-background-active;
 }
 
 .dat-face {
