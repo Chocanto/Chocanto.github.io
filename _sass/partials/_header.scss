@@ -1,21 +1,27 @@
 header {
-    background-color: #2F2F2F;
+    background-color: rgb(124, 179, 66);
     color: white;
-    height: 200px;
-    padding-right: 20px;
+    height: 400px;
     position: relative;
 }
 
 header > h1 {
     margin: 0;
-    text-align: right;
-    font-size: 60px;
+    text-align: center;
     text-transform: uppercase; 
     letter-spacing: 15px;
+    font-family: 'Roboto Slab', serif;
 }
 
 header > h2 {
     margin-top: 0;
-    text-align: right;
-    color: #A0A0A0;
+    text-align: center;
+    color: #E4E4E4;
+    font-family: 'Noto Serif', serif;
+    font-size: 3rem;
+}
+
+.dat-face {
+    display: block;
+    margin: 0 auto;
 }
