@@ -1,0 +1,33 @@
+article {
+	.meta {
+		font-size: $size-font-article-meta;
+		color: white;
+	}
+
+	.date {
+		text-align: right;
+	}
+
+	header {
+		height: $height-article-header;
+		position: relative;
+		padding: 5px;
+
+		h2 {
+			font-size: $size-font-article-title;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			margin-bottom: 0;
+			background-color: $color-main-green;
+			line-height: 1.5em;
+
+			a {
+				color: white;
+				margin-left: 10px;
+				text-decoration: none;
+			}
+		}
+	}
+}

@@ -4,11 +4,22 @@ layout: default
 
 {% for post in paginator.posts %}
   <article>
-    <header>
+    <header style="background: linear-gradient(to top, rgba(0,0,0,0) 70%, rgba(0,0,0,0.60) 100%), url('{{site.baseurl}}/assets/img/posts/{{post.img}}.png') center center no-repeat;">
+      <div class="row meta">
+        <span class="author six columns">
+          <i class="fa fa-user"></i>
+          {% if post.author %}
+            {{post.author}}
+          {% else %}
+            {{site.author}}
+          {% endif%}
+        </span>
+        <span class="date six columns">
+          <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time>
+          <i class="fa fa-calendar"></i>
+        </span>
+      </div>
       <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
-      <span class="date"><i class="icon-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></span><br/>
-      <span class="category"><i class="icon-tag"></i> {{ post.categories | category_links }}</span><br/>
-      <span class="author"><i class="icon-user"></i> {% if post.author %}{{post.author}}{% else %}{{site.author}}{% endif%}</span>
     </header>
   </article>
 {% endfor %}
