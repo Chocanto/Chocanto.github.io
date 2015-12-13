@@ -20,13 +20,18 @@ article {
 			left: 0;
 			width: 100%;
 			margin-bottom: 0;
-			background-color: $color-main-green;
+			background-color: transparentize($color-main-green, 0.2);
 			line-height: 1.5em;
+			font-family: 'Roboto Slab', serif;
 
 			a {
 				color: white;
 				margin-left: 10px;
 				text-decoration: none;
+			}
+
+			a:hover {
+				color: $color-light-grey;
 			}
 		}
 	}
