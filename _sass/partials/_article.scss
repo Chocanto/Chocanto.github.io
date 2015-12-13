@@ -12,6 +12,7 @@ article {
 		height: $height-article-header;
 		position: relative;
 		padding: 5px;
+		box-shadow: 0px 5px 15px #888;
 
 		h2 {
 			font-size: $size-font-article-title;
@@ -35,4 +36,8 @@ article {
 			}
 		}
 	}
+}
+
+.entry {
+	margin-top: 20px;
 }
