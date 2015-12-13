@@ -7,7 +7,7 @@ layout: default
     {% include article-header.html %}
     <div class="entry">
       {{ post.excerpt }}
-      <a class="button" href>Read more <i class="fa fa-chevron-right"></i></a>
+      <a class="button" href="{{ post.url }}">Read more <i class="fa fa-chevron-right"></i></a>
     </div>
   </article>
 {% endfor %}

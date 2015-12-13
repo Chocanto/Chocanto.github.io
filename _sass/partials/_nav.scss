@@ -1,0 +1,63 @@
+.clipped-menu {
+	position: absolute;
+	height: 400px;
+	width: 200px;
+	clip: rect(0, auto, auto, 0);
+}
+
+.main-menu {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: block;
+		border: solid 1px #FFF;
+		text-align: center;
+		border-radius: 5px;
+		margin-bottom: 10px;
+		transition: 0.25s;
+
+		a {
+			display: block;
+			padding: 5px;
+			font-size: 0.6em;
+			color: #FFF;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.2em;
+			height: 25px;
+			line-height: 25px;
+		}
+
+		&:hover {
+			background-color: white;
+			a {
+				color: $color-main-green;
+			}
+		}
+	}
+}
+
+.main-menu.green {
+	li {
+		border-color: $color-main-green;
+
+		a {
+			color: $color-main-green;
+		}
+
+		&:hover {
+			background-color: $color-main-green;
+
+			a {
+				color: #FFF;
+			}
+		}
+	}
+}
