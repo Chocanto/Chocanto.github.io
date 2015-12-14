@@ -10,73 +10,105 @@ a.burger-menu {
 	top: 10px;
 	left: 10px;
 	color: #FFF;
+	z-index: 100;
 
 	&.green {
 		color: $color-main-green;
 	}
 }
 
+//Default for mobile
 .main-menu {
-	visibility: hidden;
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 0;
+	left: -175px;
+	background-color: #FFF;
+	height: 100%;
+	width: 150px;
+	border-style: solid;
+	border-width: 50px 0 0 0;
+	border-color: $color-main-green;
+	transition: left 0.25s;
+	text-align: center;
+	box-shadow: 5px 0 10px #333;
+	z-index: 100;
 
 	ul {
 		list-style: none;
 	}
 
 	li {
-		display: block;
-		border: solid 1px #FFF;
-		text-align: center;
-		border-radius: 5px;
-		margin-bottom: 10px;
-		transition: 0.25s;
-
 		a {
-			display: block;
-			padding: 5px;
-			font-size: 0.6em;
-			color: #FFF;
+			color: #222;
 			text-decoration: none;
-			text-transform: uppercase;
-			font-weight: 700;
-			letter-spacing: 0.2em;
-			height: 25px;
-			line-height: 25px;
+			display: block;
 		}
 
 		&:hover {
-			background-color: white;
-			a {
-				color: $color-main-green;
-			}
+			background-color: #eee;
 		}
 	}
 
-	&.green {
-		li {
-			border-color: $color-main-green;
-
-			a {
-				color: $color-main-green;
-			}
-
-			&:hover {
-				background-color: $color-main-green;
-
-				a {
-					color: #FFF;
-				}
-			}
-		}
+	&.toggled {
+		left: 0;
 	}
 }
 
+//Then for desktop screen
 @media (min-width: 1200px) {
 	.main-menu {
 		visibility: visible;
+		top: 10px;
+		left: 10px;
+		background-color: transparent;
+		height: 100;
+		border-style: none;
+		box-shadow: none;
+
+		li {
+			display: block;
+			border: solid 1px #FFF;
+			text-align: center;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			transition: 0.25s;
+
+			a {
+				display: block;
+				padding: 5px;
+				font-size: 0.6em;
+				color: #FFF;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 700;
+				letter-spacing: 0.2em;
+				height: 25px;
+				line-height: 25px;
+			}
+
+			&:hover {
+				background-color: white;
+				a {
+					color: $color-main-green;
+				}
+			}
+		}
+
+		&.green {
+			li {
+				border-color: $color-main-green;
+				a {
+					color: $color-main-green;
+				}
+				&:hover {
+					background-color: $color-main-green;
+
+					a {
+						color: #FFF;
+					}
+				}
+			}
+		}
 	}
 
 	.burger-menu {

@@ -1,11 +1,6 @@
 <div class="clipped-menu">
-  <a href class="burger-menu"><i class="fa fa-bars"></i></a>
   <nav class="main-menu">
-    <ul>
-      <li><a href="{{site.url}}/">Home</a></li>
-      <li><a href>Projects</a></li>
-      <li><a href>About me</a></li>
-      <li><a href>Contact</a></li>
-    </ul>
+    {% include nav-ul.html %}
   </nav>
+  <a href class="burger-menu" onclick="toggleBurger(); return false;"><i class="fa fa-bars"></i></a>
 </div>

@@ -1,9 +1,4 @@
-<a href class="burger-menu green"><i class="fa fa-bars"></i></a>
-<nav class="main-menu green">
-  <ul>
-    <li><a href="{{site.url}}/">Home</a></li>
-    <li><a href>Projects</a></li>
-    <li><a href>About me</a></li>
-    <li><a href>Contact</a></li>
-  </ul>
+<nav id="main-menu" class="main-menu green">
+  {% include nav-ul.html %}
 </nav>
+<a href id="burger-green" class="burger-menu green" onclick="toggleBurger(); return false;"><i class="fa fa-bars"></i></a>
