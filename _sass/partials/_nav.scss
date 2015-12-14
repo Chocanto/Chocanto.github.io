@@ -5,7 +5,19 @@
 	clip: rect(0, auto, auto, 0);
 }
 
+a.burger-menu {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	color: #FFF;
+
+	&.green {
+		color: $color-main-green;
+	}
+}
+
 .main-menu {
+	visibility: hidden;
 	position: fixed;
 	top: 10px;
 	left: 10px;
@@ -42,22 +54,32 @@
 			}
 		}
 	}
-}
 
-.main-menu.green {
-	li {
-		border-color: $color-main-green;
-
-		a {
-			color: $color-main-green;
-		}
-
-		&:hover {
-			background-color: $color-main-green;
+	&.green {
+		li {
+			border-color: $color-main-green;
 
 			a {
-				color: #FFF;
+				color: $color-main-green;
+			}
+
+			&:hover {
+				background-color: $color-main-green;
+
+				a {
+					color: #FFF;
+				}
 			}
 		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-menu {
+		visibility: visible;
+	}
+
+	.burger-menu {
+		visibility: hidden;
 	}
 }
