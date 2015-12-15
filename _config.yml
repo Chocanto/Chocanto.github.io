@@ -13,6 +13,6 @@ defaults:
          type: "posts"
      values:
          author: "Anthony Granger"
-         layout: "default"
+         layout: "post"
 
 gems: ["jekyll-paginate"]

@@ -1,17 +1,22 @@
-<header style="background: linear-gradient(to top, rgba(0,0,0,0) 70%, rgba(0,0,0,0.60) 100%), url('{{site.baseurl}}/assets/img/posts/{{post.img}}.png') center center no-repeat;">
+{% if post %}
+  {% assign page = post %}
+{% endif %}
+<header style="background: linear-gradient(to top, rgba(0,0,0,0) 70%, rgba(0,0,0,0.60) 100%), url('{{site.baseurl}}/assets/img/posts/{{page.img}}.png') center center no-repeat;">
   <div class="row meta">
     <span class="author six columns">
       <i class="fa fa-user"></i>
-      {% if post.author %}
-        {{post.author}}
+      {% if page.author %}
+        {{ page.author }}
       {% else %}
-        {{site.author}}
+        {{ site.author }}
       {% endif%}
     </span>
     <span class="date six columns">
-      <time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time>
+      <time datetime="{{post.date|date:"%F"}}">
+        {{ page.date|date:"%b %d, %Y" }}
+      </time>
       <i class="fa fa-calendar"></i>
     </span>
   </div>
-  <h2><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+  <h2><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a>
 </header>
