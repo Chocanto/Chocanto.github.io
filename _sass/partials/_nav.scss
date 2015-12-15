@@ -21,10 +21,10 @@ a.burger-menu {
 .main-menu {
 	position: fixed;
 	top: 0;
-	left: -175px;
+	left: $left-nav-start-mobile;
 	background-color: #FFF;
 	height: 100%;
-	width: 150px;
+	width: $width-nav-mobile;
 	border-style: solid;
 	border-width: 50px 0 0 0;
 	border-color: $color-main-green;
@@ -38,6 +38,9 @@ a.burger-menu {
 	}
 
 	li {
+		margin-bottom: 0;
+		height: $height-nav-item;
+		line-height: $height-nav-item;
 		a {
 			color: #222;
 			text-decoration: none;
@@ -50,7 +53,7 @@ a.burger-menu {
 	}
 
 	&.toggled {
-		left: 0;
+		left: $left-nav-end-mobile;
 	}
 }
 
@@ -61,9 +64,9 @@ a.burger-menu {
 		top: 10px;
 		left: 10px;
 		background-color: transparent;
-		height: 100;
 		border-style: none;
 		box-shadow: none;
+		height: 100px;
 
 		li {
 			display: block;
@@ -75,15 +78,12 @@ a.burger-menu {
 
 			a {
 				display: block;
-				padding: 5px;
 				font-size: $font-size-nav-desktop;
 				color: #FFF;
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 700;
 				letter-spacing: 0.2em;
-				height: 25px;
-				line-height: 25px;
 			}
 
 			&:hover {
