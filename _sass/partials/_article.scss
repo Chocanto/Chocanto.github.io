@@ -64,3 +64,19 @@ article {
 		font-size: 11px;
 	}
 }
+
+.post-anchor {
+	opacity: 0;
+	margin-left: 10px;
+	font-size: 0.5em;
+	transition: 0.25s ease-in-out 0.2s;
+}
+
+h1:hover .post-anchor,
+h2:hover .post-anchor,
+h3:hover .post-anchor,
+h4:hover .post-anchor,
+h5:hover .post-anchor,
+h6:hover .post-anchor {
+	opacity: 1;
+}

@@ -18,3 +18,22 @@ function toggleBurger() {
 
 	return false;
 }
+
+function generateAnchors() {
+	var post = document.getElementById('post');
+
+	if (post) {
+		var headers = post.querySelectorAll('h1, h2, h3, h4, h5, h6');
+		for (header of headers) {
+			var anchor = document.createElement('a');
+			anchor.href = "#" + header.id;
+			anchor.innerHTML = '<i class="fa fa-anchor post-anchor"></i>';
+
+			header.appendChild(anchor);
+		}
+	}
+}
+
+window.onload = function() {
+	generateAnchors();
+}
