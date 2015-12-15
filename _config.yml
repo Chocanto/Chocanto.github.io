@@ -1,8 +1,8 @@
 name: Chocanto
-
 paginate: 3
-
 url: "http://127.0.0.1:4000"
+github-url: "https://github.com/Chocanto/chocanto.me"
+github-default-branch: "/blob/master/"
 
 timezone: Europe/Paris
 
