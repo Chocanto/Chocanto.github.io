@@ -1,6 +1,6 @@
 .clipped-menu {
 	position: absolute;
-	height: 400px;
+	height: $height-header;
 	width: 200px;
 	clip: rect(0, auto, auto, 0);
 }
@@ -76,7 +76,7 @@ a.burger-menu {
 			a {
 				display: block;
 				padding: 5px;
-				font-size: 0.6em;
+				font-size: $font-size-nav-desktop;
 				color: #FFF;
 				text-decoration: none;
 				text-transform: uppercase;

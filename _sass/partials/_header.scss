@@ -1,6 +1,6 @@
 header.page-header {
     background-color: $color-header-background;
-    min-height: 400px;
+    min-height: $height-header;
     position: relative;
 
     & > h1 {
@@ -10,6 +10,7 @@ header.page-header {
         letter-spacing: 15px;
         font-weight: 100;
         font-family: 'Roboto Slab', serif;
+        font-size: 5em;
         color: $color-header-title;
     }
 
