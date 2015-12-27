@@ -10,9 +10,16 @@ defaults:
     -
      scope:
          path: ""
-         type: "posts"
+         type: posts
      values:
          author: "Anthony Granger"
-         layout: "post"
+         layout: post
+         lang: en
+    -
+     scope:
+         path: fr
+         type: posts
+     values:
+         lang: fr
 
 gems: ["jekyll-paginate"]
