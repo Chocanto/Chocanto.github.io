@@ -120,4 +120,25 @@ a.burger-menu {
 .lang {
 	position: fixed;
 	top: 180px;
+	left: 10px;
+	width: $width-nav-desktop;
+
+	ul {
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+
+		a {
+			padding: 0 5px;
+			height: 2em;
+			line-height: 2em;
+			font-weight: 300;
+
+			&.en:lang(en), &.fr:lang(fr) {
+				font-weight: 700; 
+			}
+		}
+	}
 }
