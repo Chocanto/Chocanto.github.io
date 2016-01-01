@@ -30,17 +30,17 @@ langs-value:
 
 t:
     home:
-        en: "home"
-        fr: "accueil"
+        en: "Home"
+        fr: "Accueil"
     project:
-        en: "project"
-        fr: "projets"
+        en: "Project"
+        fr: "Projets"
     about-me:
-        en: "about me"
+        en: "About me"
         fr: "À propos"
     contact:
-        en: "contact"
-        fr: "contact"
+        en: "Contact"
+        fr: "Contact"
     subtitle:
         en: "My very own part of the Internet"
         fr: "Ma propre partie de l'Internet"
