@@ -118,26 +118,20 @@ a.burger-menu {
 }
 
 .lang {
-	position: fixed;
-	top: 180px;
-	left: 10px;
-	width: $width-nav-desktop;
-
-	ul {
-		text-align: center;
-	}
 
 	li {
 		display: inline-block;
+		height: 1.5em;
 
 		a {
 			padding: 0 5px;
-			height: 2em;
-			line-height: 2em;
+			line-height: 1.7em;
 			font-weight: 300;
+			text-transform: lowercase;
 
 			&.en:lang(en), &.fr:lang(fr) {
-				font-weight: 700; 
+				font-weight: 700;
+				text-transform: uppercase; 
 			}
 		}
 	}
