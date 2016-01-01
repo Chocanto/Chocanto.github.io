@@ -4,6 +4,8 @@ url: "http://127.0.0.1:4000"
 github-url: "https://github.com/Chocanto/chocanto.me"
 github-default-branch: "/edit/master/"
 
+markdown: redcarpet
+
 timezone: Europe/Paris
 
 defaults:
@@ -24,10 +26,12 @@ defaults:
 
 gems: ["jekyll-paginate"]
 
+# Value to use into url per language
 langs-value:
     en: ""
     fr: fr
 
+# Translation
 t:
     home:
         en: "Home"
