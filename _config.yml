@@ -10,7 +10,6 @@ defaults:
     -
      scope:
          path: ""
-         type: posts
      values:
          author: "Anthony Granger"
          layout: post
@@ -18,7 +17,6 @@ defaults:
     -
      scope:
          path: fr
-         type: posts
      values:
          lang: fr
 

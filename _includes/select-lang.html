@@ -1,4 +1,8 @@
-{% assign posts=site.posts | where:"name", page.name | sort: 'path' %}
+{% if page.layout == "post" %}
+  {% assign posts=site.posts | where:"name", page.name | sort: 'lang' %}
+{% else %}
+  {% assign posts=site.pages | where:"name", page.name | sort: 'lang' %}
+{% endif %}
 
 <div class="lang">
   <ul>

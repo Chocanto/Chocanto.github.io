@@ -1,10 +1,10 @@
 ---
 layout: default
 name: index
-lang: en
+lang: fr
 ---
 
-{% assign posts=paginator.posts | where:"lang", page.lang %}
+{% assign posts=site.posts | where:"lang", page.lang %}
 
 {% for post in posts %}
   <article class="list">
