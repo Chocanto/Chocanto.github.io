@@ -12,8 +12,12 @@
       {% endif%}
     </span>
     <span class="date six columns">
-      <time datetime="{{post.date|date:"%F"}}">
-        {{ page.date|date:"%b %d, %Y" }}
+      <time datetime="{{ post.date | date:"%F" }}">
+        {% if page.lang == "fr" %}
+          {% include french-date.html %}
+        {% else %}
+          {{ page.date|date:"%B %d, %Y" }}
+        {% endif %}
       </time>
       <i class="fa fa-calendar"></i>
     </span>

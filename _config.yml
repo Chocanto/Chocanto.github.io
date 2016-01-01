@@ -23,6 +23,24 @@ defaults:
          base-url: "http://127.0.0.1:4000/fr/"
 
 gems: ["jekyll-paginate"]
+
 langs-value:
     en: ""
     fr: fr
+
+t:
+    home:
+        en: "home"
+        fr: "accueil"
+    project:
+        en: "project"
+        fr: "projets"
+    about-me:
+        en: "about me"
+        fr: "À propos"
+    contact:
+        en: "contact"
+        fr: "contact"
+    subtitle:
+        en: "My very own part of the Internet"
+        fr: "Ma propre partie de l'Internet"
