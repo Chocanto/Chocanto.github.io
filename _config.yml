@@ -48,3 +48,9 @@ t:
     subtitle:
         en: "My very own part of the Internet"
         fr: "Ma propre partie de l'Internet"
+    footer-article:
+        en: "Found a mistake, or just want to add your words to this post ?"
+        fr: "Vous avez trouvé une erreur ou souhaitez juste ajouter votre grain de sel ?"
+    fork:
+        en: "Fork it on github"
+        fr: "Éditer sur github"
