@@ -1,0 +1,73 @@
+---
+title: "Contact"
+layout: "page"
+id: "contact"
+---
+
+# Contact
+
+You can contact me by using my profiles in social networks at top right of my site.
+
+Or you can use my good old email :
+
+`grangeranthony` à `gmail.com`
+(replace "à" by "@")
+
+### PGP
+
+Because email is one of the less secured way to communicate on the Internet, here is my PGP public key. If you wonder how to use it with thundermail, just read this [little guide](https://support.mozilla.org/en-US/kb/digitally-signing-and-encrypting-messages#w_sending-a-digitally-signed-and-or-encrypted-email).
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1
+
+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
+hrx6s3vvloI=
+=0Loa
+-----END PGP PUBLIC KEY BLOCK-----
+```

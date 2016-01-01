@@ -1,6 +1,7 @@
 ---
 title: "About me"
 layout: "page"
+id: "about"
 ---
 
 # About me
