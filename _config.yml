@@ -14,10 +14,15 @@ defaults:
          author: "Anthony Granger"
          layout: post
          lang: en
+         base-url: "http://127.0.0.1:4000/"
     -
      scope:
          path: fr
      values:
          lang: fr
+         base-url: "http://127.0.0.1:4000/fr/"
 
 gems: ["jekyll-paginate"]
+langs-value:
+    en: ""
+    fr: fr
