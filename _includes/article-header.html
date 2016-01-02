@@ -12,7 +12,7 @@
       {% endif%}
     </span>
     <span class="date six columns">
-      <time datetime="{{ post.date | date:"%F" }}" property="dateCreated">
+      <time datetime="{{ page.date | date:"%F" }}" property="datePublished">
         {% if page.lang == "fr" %}
           {% include french-date.html %}
         {% else %}
