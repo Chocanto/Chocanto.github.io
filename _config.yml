@@ -3,6 +3,7 @@ paginate: 3
 url: "http://chocanto.github.io/"
 github-url: "https://github.com/Chocanto/chocanto.me"
 github-default-branch: "/edit/master/"
+ga: "UA-71881194-1"
 
 markdown: redcarpet
 
