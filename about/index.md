@@ -1,7 +1,7 @@
 ---
 title: "About me"
 layout: "page"
-id: "about"
+i18n-link: "about"
 ---
 
 # About me

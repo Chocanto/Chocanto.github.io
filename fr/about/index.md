@@ -1,7 +1,7 @@
 ---
 title: "À propos"
 layout: "page"
-id: "about"
+i18n-link: "about"
 ---
 
 # À propos

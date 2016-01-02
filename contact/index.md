@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 layout: "page"
-id: "contact"
+i18n-link: "contact"
 ---
 
 # Contact

@@ -17,6 +17,7 @@ defaults:
          layout: post
          lang: en
          base-url: "http://127.0.0.1:4000/"
+         post: true
     -
      scope:
          path: fr
@@ -24,7 +25,7 @@ defaults:
          lang: fr
          base-url: "http://127.0.0.1:4000/fr/"
 
-gems: ["jekyll-paginate"]
+gems: ["jekyll-paginate", "github-pages"]
 
 # Value to use into url per language
 langs-value:

@@ -1,7 +1,7 @@
 ---
 title: Hello world !
 img: 1
-name: hello
+i18n-link: hello
 ---
 
 Première publication d'une longue série... enfin j'espère !

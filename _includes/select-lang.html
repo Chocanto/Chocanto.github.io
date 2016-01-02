@@ -1,13 +1,13 @@
-{% if page.layout == "post" %}
-  {% assign posts=site.posts | where:"name", page.name | sort: 'lang' %}
-{% else %}
-  {% assign posts=site.pages | where:"id", page.id | sort: 'lang' %}
+{% assign posts=site.posts | where:"i18n-link", page.i18n-link | sort: 'lang' %}
+
+{% if posts.size == 0 %}
+  {% assign posts=site.pages | where:"i18n-link", page.i18n-link | sort: 'lang' %}
 {% endif %}
 
 <div class="lang">
   <ul>
     {% for post in posts %}
-      <li><a class="{{ post.lang }}" href="{{ post.url }}">{{ post.lang }}</a></li>
+      <li><a class="{{ post.lang }}" href="{{ site.base-url }}{{ post.url }}">{{ post.lang }}</a></li>
     {% endfor %}
   </ul>
 </div>

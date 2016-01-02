@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 layout: "page"
-id: "projects"
+i18n-link: "projects"
 ---
 
 # My projects
