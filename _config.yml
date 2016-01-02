@@ -2,6 +2,7 @@ name: Chocanto
 paginate: 3
 url: "http://chocanto.github.io/"
 github-url: "https://github.com/Chocanto/chocanto.me"
+base-url: "http://chocanto.github.io"
 github-default-branch: "/edit/master/"
 ga: "UA-71881194-1"
 
