@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<article>
+<article vocab="http://schema.org/" typeof="Article">
   {% include article-header.html %}
-  <div class="entry" id="post">
+  <div class="entry" id="post" property="articleBody">
     {{ content }}
     <hr>
     {% include article-footer.html %}
