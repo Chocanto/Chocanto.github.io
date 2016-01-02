@@ -1,24 +1,25 @@
 {% assign m = page.date | date: "%m" %}
 
-{{ page.date | date: "%d "}}
+{{ page.date | date: "%-d "}}
+
 {% case m %}
-  {% when '1' %}
+  {% when '01' %}
     Janvier
-  {% when '2' %}
+  {% when '02' %}
     Février
-  {% when '3' %}
+  {% when '03' %}
     Mars
-  {% when '4' %}
+  {% when '04' %}
     Avril
-  {% when '5' %}
+  {% when '05' %}
     Mai
-  {% when '6' %}
+  {% when '06' %}
     Juin
-  {% when '7' %}
+  {% when '07' %}
     Juillet
-  {% when '8' %}
+  {% when '08' %}
     Août
-  {% when '9' %}
+  {% when '09' %}
     Septembre
   {% when '10' %}
     Octobre
