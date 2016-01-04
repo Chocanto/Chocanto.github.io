@@ -6,6 +6,14 @@ body {
 	margin-top: 40px;
 }
 
+.container.full-width {
+	width: 100%;
+
+	@media (min-width: 550px) {
+		width: 80%;
+	}
+}
+
 .overlay {
 	position: fixed;
 	top: 0;
