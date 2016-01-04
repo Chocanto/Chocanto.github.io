@@ -1,8 +1,8 @@
 name: Chocanto
 paginate: 3
-url: "http://chocanto.github.io/"
+url: "http://127.0.0.1:4000"
 github-url: "https://github.com/Chocanto/chocanto.me"
-base-url: "http://chocanto.github.io"
+base-url: "http://127.0.0.1:4000"
 github-default-branch: "/edit/master/"
 ga: "UA-71881194-1"
 
@@ -18,13 +18,13 @@ defaults:
          author: "Anthony Granger"
          layout: post
          lang: en
-         base-url: "http://chocanto.github.io/"
+         base-url: "http://127.0.0.1:4000/"
     -
      scope:
          path: fr
      values:
          lang: fr
-         base-url: "http://chocanto.github.io/fr/"
+         base-url: "http://127.0.0.1:4000/fr/"
 
 gems: ["jekyll-paginate", "github-pages"]
 
