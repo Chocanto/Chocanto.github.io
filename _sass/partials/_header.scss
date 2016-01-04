@@ -34,8 +34,19 @@ header.page-header {
 .social {
     position: absolute;
     bottom: -$size-social-button/2;
-    right: 10px;
     font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: ($size-social-button * 4) + 9px * 3;
+
+    @media (min-width: 550px) {
+        right: 10px;
+        left: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     a {
         color: $color-social-font;

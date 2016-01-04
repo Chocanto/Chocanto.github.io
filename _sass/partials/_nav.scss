@@ -3,6 +3,7 @@
 	height: $height-header;
 	width: 200px;
 	clip: rect(0, auto, auto, 0);
+	pointer-events: none;
 }
 
 a.burger-menu {
