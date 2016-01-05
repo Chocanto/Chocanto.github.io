@@ -3,6 +3,8 @@
     {{ site.t['footer-article'][page.lang] }}
   </div>
   <div class="four columns">
-    <a class="button github-edit" href="{{ site.github.repository_url }}{{ site.github-default-branch }}{{ page.path }}" target="_blank"><i class="fa fa-github"></i> {{ site.t['fork'][page.lang] }}</a>
+  	{% if site.environment == 'production' %}
+    	<a class="button github-edit" href="{{ site.github.repository_url }}{{ site.github-default-branch }}{{ page.path }}" target="_blank"><i class="fa fa-github"></i> {{ site.t['fork'][page.lang] }}</a>
+    {% endif %}
   </div>
 </footer>

@@ -3,6 +3,7 @@
 	height: $height-header;
 	width: 200px;
 	clip: rect(0, auto, auto, 0);
+	pointer-events: none;
 }
 
 a.burger-menu {
@@ -32,6 +33,7 @@ a.burger-menu {
 	text-align: center;
 	box-shadow: 5px 0 10px #333;
 	z-index: 100;
+	pointer-events: all;
 
 	ul {
 		list-style: none;

@@ -3,8 +3,8 @@
 {% endif %}
 <header style="background: linear-gradient(to top, rgba(0,0,0,0) 70%, rgba(0,0,0,0.60) 100%), url('{{site.base-url}}/assets/img/posts/{{page.img}}.png') center center no-repeat;">
   <meta property="image" content="{{ site.base-url }}/assets/img/posts/{{page.img}}.png"/>
-  <div class="row meta">
-    <span class="author six columns" property="author publisher">
+  <div class="meta">
+    <span class="author" property="author publisher">
       <i class="fa fa-user"></i>
       {% if page.author %}
         {{ page.author }}
@@ -12,7 +12,7 @@
         {{ site.author }}
       {% endif%}
     </span>
-    <span class="date six columns">
+    <span class="date">
       <time datetime="{{ page.date | date:"%F" }}" property="datePublished">
         {% if page.lang == "fr" %}
           {% include french-date.html %}
@@ -23,5 +23,5 @@
       <i class="fa fa-calendar"></i>
     </span>
   </div>
-  <h2 property="headline name"><a href="{{ site.base-url }}/{{ page.url }}">{{ page.title }}</a></h2>
+  <h2 property="headline name"><a href="{{ site.base-url }}{{ page.url }}">{{ page.title }}</a></h2>
 </header>
