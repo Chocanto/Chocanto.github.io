@@ -33,6 +33,7 @@ a.burger-menu {
 	text-align: center;
 	box-shadow: 5px 0 10px #333;
 	z-index: 100;
+	pointer-events: all;
 
 	ul {
 		list-style: none;
