@@ -1,12 +1,14 @@
 name: Chocanto
 paginate: 3
-url: "http://127.0.0.1:4000"
+url: "http://chocanto.github.io/"
 github-url: "https://github.com/Chocanto/chocanto.me"
-base-url: "http://127.0.0.1:4000"
+base-url: "http://chocanto.github.io"
 github-default-branch: "/edit/master/"
 ga: "UA-71881194-1"
 
 markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
 
 timezone: Europe/Paris
 
@@ -18,15 +20,18 @@ defaults:
          author: "Anthony Granger"
          layout: post
          lang: en
-         base-url: "http://127.0.0.1:4000/"
+         base-url: "http://chocanto.github.io/"
     -
      scope:
          path: fr
      values:
          lang: fr
-         base-url: "http://127.0.0.1:4000/fr/"
+         base-url: "http://chocanto.github.io/fr/"
 
 gems: ["jekyll-paginate", "github-pages"]
+
+# For travis
+exclude: [vendor]
 
 # Value to use into url per language
 langs-value:
