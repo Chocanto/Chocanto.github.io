@@ -8,6 +8,7 @@ body {
 
 .container.full-width {
 	width: 100%;
+	padding:0;
 
 	@media (min-width: 550px) {
 		width: 80%;
