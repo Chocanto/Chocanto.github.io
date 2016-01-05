@@ -7,7 +7,7 @@ Hey ! Chocanto.me is my personnal website, but any contribution is welcome !
 Dependencies :
 * [RubyGems](https://rubygems.org/pages/download)
 * [jekyll](http://jekyllrb.com/docs/installation/)
-* [bundle](`gem install bundle`)
+* bundle (`gem install bundle`)
 
 Then execute the following commands (for Linux): 
 
