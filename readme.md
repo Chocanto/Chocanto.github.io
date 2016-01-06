@@ -19,12 +19,6 @@ bundle exec jekyll serve
 
 Open http://127.0.0.1:4000/ in your prefereted navigator, and... It should be working !
 
-**Warning** : You might need to change some settings from `_config.yml` in order to navigate into the site without living localhost. In `_config.yml`, edit the following options value :
-* `url: "http://127.0.0.1:4000/"`
-* `base-url: "http://127.0.0.1:4000"`
-* In defaults > first scope : `base-url: "http://127.0.0.1:4000/"`
-* In defaults > second scope (fr) : `base-url: "http://127.0.0.1:4000/fr/"`
-
 ## Tests
 
 This website use [html-proofer](https://github.com/gjtorikian/html-proofer) to check if the generated HTML files does not contain errors. Every pull requests will be tested with [travis](https://travis-ci.org/) before being manually reviewed. In fact you must see a green badge in the top of this readme. If not, please start to panic.
