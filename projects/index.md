@@ -22,7 +22,7 @@ Coming soon...
 
 ## Geothermal project (2015)
 
-<img style="width: 50%; display: block; margin: 0 auto;" alt="Projet géothermie" src="{{ page.base-url }}/assets/img/geothermie.png"/>
+<img style="width: 50%; display: block; margin: 0 auto;" alt="Projet géothermie" src="{{ site.url }}/assets/img/geothermie.png"/>
 
 A school final project used by students in thermal and energy engineering. It can acquire values from sensors connected on Arduino(s), then a web application display them on a timed graph and sensors in a 3D environment.
 
@@ -37,7 +37,7 @@ Technologies used :
 
 ## Ubuntu Document Viewer App (2014)
 
-<img align="right" alt="Ubuntu Document Viewer App" src="{{ page.base-url }}/assets/img/documentViewer.png"/>
+<img align="right" alt="Ubuntu Document Viewer App" src="{{ site.url }}/assets/img/documentViewer.png"/>
 
 An open sourced Document Viewer application for Ubuntu devices. I was the main contributor in the start of the project. Today, the project count more than 30 contributors from all around the world.
 
