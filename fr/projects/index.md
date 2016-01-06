@@ -22,7 +22,7 @@ Technologies utilisées :
 
 ## Geothermal project (2015)
 
-<img style="width: 50%; display: block; margin: 0 auto;" alt="Projet géothermie" src="{{ site.url }}/assets/img/geothermie.png"/>
+<img style="width: 50%; display: block; margin: 0 auto;" alt="Projet géothermie" src="{{ site.base-url }}/assets/img/geothermie.png"/>
 
 Un projet de fin d'études utilisé par des étudiants en GTE (Génie Thermique et Énergétique). Il est capable d'acquérir des données depuis des capteurs montés sur des Arduino(s). Une application web les affichent alors sur un graphe et les capteurs dans un environnement 3D.
 
@@ -37,7 +37,7 @@ Technologies utilisées :
 
 ## Ubuntu Document Viewer App (2014)
 
-<img align="right" alt="Ubuntu Document Viewer App" src="{{ site.url }}/assets/img/documentViewer.png"/>
+<img align="right" alt="Ubuntu Document Viewer App" src="{{ site.base-url }}/assets/img/documentViewer.png"/>
 
 Une application libre, liseuse de documents, pour les appareils fonctionnant sous Ubuntu. J'étais le principal contributeur au début du projet. Aujourd'hui le projet compte plus de 30 contibuteurs provenant du monde entier.
 
