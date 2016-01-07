@@ -10,6 +10,9 @@ markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]
 
+sass:
+    style: compressed
+
 timezone: Europe/Paris
 
 defaults:
