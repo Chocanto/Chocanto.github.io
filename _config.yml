@@ -1,6 +1,6 @@
 name: Chocanto
 paginate: 3
-url: "http://chocanto.me/"
+url: "http://chocanto.me"
 github-url: "https://github.com/Chocanto/chocanto.me"
 base-url: ""
 github-default-branch: "/edit/master/"
@@ -64,3 +64,6 @@ t:
     fork:
         en: "Fork it on github"
         fr: "Éditer sur github"
+    desc:
+        en: "My personnal website. Anthony Granger"
+        fr: "Mon site personnel. Anthony Granger"
