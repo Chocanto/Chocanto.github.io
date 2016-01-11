@@ -10,9 +10,9 @@
     </div>
   </div>
   <div class="share-social">
-    <a href onclick="shareFB(); return false;"><i class="fa fa-facebook"></i></a>
-    <a href onclick="shareTwitter('{{ page.title }}'); return false;"><i class="fa fa-twitter"></i></a>
-    <a href><i class="fa fa-google-plus"></i></a>
+    <a href onclick="shareFB('{{ site.url }}{{ site.base-url }}{{ page.url }}'); return false;"><i class="fa fa-facebook"></i></a>
+    <a href onclick="shareTwitter('{{ site.url }}{{ site.base-url }}{{ page.url }}', '{{ page.title }}'); return false;"><i class="fa fa-twitter"></i></a>
+    <a href onclick="shareGp('{{ site.url }}{{ site.base-url }}{{ page.url }}'); return false;"><i class="fa fa-google-plus"></i></a>
   </div>
   <div class="share-total">
     <span id="share-count-fb"></span>

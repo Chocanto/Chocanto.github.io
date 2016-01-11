@@ -35,19 +35,24 @@ function generateAnchors() {
 }
 
 // Sharing
-function shareFB() {
+function shareFB(link) {
 	FB.ui({
 	  method: 'share',
-	  href: site.location,
+	  href: encodeURI(link),
 	}, function(response){});
 }
 
-function shareTwitter(title) {
+function shareTwitter(link, title) {
 	var url = 'https://twitter.com/intent/tweet?';
-	url += 'url=' + encodeURI(document.location);
+	url += 'url=' + encodeURI(link);
 	url += '&via=chocanto';
 	url += '&text=' + title;
-	window.open(url, 'tweet', "height=550,width=420");
+	window.open(url, '', "height=420,width=550");
+}
+
+function shareGp(link) {
+	var url = 'https://plus.google.com/share?url=' + encodeURI(link);
+	window.open(url,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
 }
 
 // Sharing count
