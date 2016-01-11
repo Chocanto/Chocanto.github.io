@@ -41,9 +41,28 @@
 
     <div class="overlay" id="overlay" onclick="toggleBurger();"></div>
 
+    <div id="fb-root"></div>
+
     <script async src="{{ site.base-url }}/js/vendor/modernizr-2.8.3.min.js"></script>
     <script async src="{{ site.base-url }}/js/plugins.js"></script>
     <script async src="{{ site.base-url }}/js/main.js"></script>
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1698702190341590',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+      (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     {% if jekyll.environment == 'production' %}
     <script>

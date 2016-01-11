@@ -81,3 +81,30 @@ h5:hover .post-anchor,
 h6:hover .post-anchor {
 	opacity: 1;
 }
+
+.share-social {
+	text-align: center;
+	margin-top: 20px;
+
+	a {
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		border: solid 2px;
+		line-height: 30px;
+		border-radius: 100px;
+	}
+
+	a + a {
+		margin-left: 20px;
+	}
+}
+
+.share-total {
+	text-align: center;
+	span {
+		display: inline-block;
+		width: 55px;
+		font-size: 0.8em;
+	}
+}

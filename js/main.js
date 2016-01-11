@@ -34,6 +34,46 @@ function generateAnchors() {
 	}
 }
 
+// Sharing
+function shareFB() {
+	FB.ui({
+	  method: 'share',
+	  href: site.location,
+	}, function(response){});
+}
+
+function shareTwitter(title) {
+	var url = 'https://twitter.com/intent/tweet?';
+	url += 'url=' + encodeURI(document.location);
+	url += '&via=chocanto';
+	url += '&text=' + title;
+	window.open(url, 'tweet', "height=550,width=420");
+}
+
+// Sharing count
+function displayShareCount() {
+	getFbCounts();
+}
+
+function getFbCounts() {
+	FB.api(
+    "/",
+    {
+        "id": encodeURI(document.location),
+        "fields" : "share"
+    },
+    function (response) {
+    	if (response && !response.error) {
+        	var count = response.share.share_count;
+        	if (count > 0) {
+        		document.getElementById('share-count-fb').innerHTML = count;
+        	}
+      	}
+    }
+);
+}
+
 window.onload = function() {
 	generateAnchors();
+	displayShareCount();
 }
