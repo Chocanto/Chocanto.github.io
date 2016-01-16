@@ -1,10 +1,22 @@
-<footer class="row">
-  <div class="eight columns">
-    {{ site.t['footer-article'][page.lang] }}
+<footer>
+  <div class="row">
+    <div class="eight columns">
+      {{ site.t['footer-article'][page.lang] }}
+    </div>
+    <div class="four columns">
+      {% if jekyll.environment == 'production' %}
+        <a class="button github-edit" href="{{ site.github.repository_url }}{{ site.github-default-branch }}{{ page.path }}" target="_blank"><i class="fa fa-github"></i> {{ site.t['fork'][page.lang] }}</a>
+      {% endif %}
+    </div>
   </div>
-  <div class="four columns">
-  	{% if jekyll.environment == 'production' %}
-    	<a class="button github-edit" href="{{ site.github.repository_url }}{{ site.github-default-branch }}{{ page.path }}" target="_blank"><i class="fa fa-github"></i> {{ site.t['fork'][page.lang] }}</a>
-    {% endif %}
+  <div class="share-social">
+    <a href onclick="shareFB('{{ site.url }}{{ site.base-url }}{{ page.url }}'); return false;"><i class="fa fa-facebook"></i></a>
+    <a href onclick="shareTwitter('{{ site.url }}{{ site.base-url }}{{ page.url }}', '{{ page.title }}'); return false;"><i class="fa fa-twitter"></i></a>
+    <a href onclick="shareGp('{{ site.url }}{{ site.base-url }}{{ page.url }}'); return false;"><i class="fa fa-google-plus"></i></a>
+  </div>
+  <div class="share-total">
+    <span id="share-count-fb"></span>
+    <span></span>
+    <span></span>
   </div>
 </footer>
