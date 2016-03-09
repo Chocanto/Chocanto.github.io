@@ -6,10 +6,6 @@ base-url: ""
 github-default-branch: "/edit/master/"
 ga: "UA-71881194-1"
 
-markdown: redcarpet
-redcarpet:
-    extensions: [with_toc_data]
-
 sass:
     style: compressed
 
