@@ -1,3 +1,9 @@
+{% assign postsTrans=site.posts | where:"i18n-link", page.i18n-link | sort: 'lang' %}
+
+{% if postsTrans.size == 0 %}
+  {% assign postsTrans=site.pages | where:"i18n-link", page.i18n-link | sort: 'lang' %}
+{% endif %}
+
 <!doctype html>
 <html class="no-js" lang="{{ page.lang }}">
   <head>
@@ -19,9 +25,9 @@
 
     <link rel="apple-touch-icon" href="{{ site.base-url }}/apple-touch-icon.png"/>
 
-    <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ site.base-url}}/fr/"/>
-    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.base-url}}/"/>
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.base-url}}/"/>
+    {% for postTrans in postsTrans %}
+      <link rel="alternate" hreflang="{{ postTrans.lang }}" href="{{ site.base-url }}{{ postTrans.url }}"/>
+    {% endfor %}
 
     <link rel="stylesheet" href="{{ site.base-url }}/css/main.css"/>
   </head>
