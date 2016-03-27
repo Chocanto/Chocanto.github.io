@@ -33,6 +33,80 @@ But how does the server know that your visitor speak one specific language ?
 
 First, they can read the ACCEPT_LANGUAGE http header. When defined, it should indiquate what is the primary language of the visitor. But what if your visitor want to read your website with an another language than it's primary one ? You have to let him select the language in which your content will be displayed by using a `<select>` block for example. But wait, then your visitor will have to select his language for every page of your website ? That is not something you might want to make him do (or you don't really want to keep your readers, but that's another subject...). You will then have to make use of those (not really delicious) cookies.
 
-You can also decide to make use or you url.
+You can also decide to make use of your URL, like this blog. Yup, french version of every post is available via the `/fr/` prefix. Other websites create a new (virtual most of the time) subdomain per language so you can just go to : `lang.my-site.com`.
 
 Aaaand, that's all. But it only work when you have something running behind your client. And it is not the case with Jekyll, everything is static. How can we acheive this feat ?
+
+## Multilingual website, the Jekyll way
+
+More or less, the Chocanto way. You can find a lot of great methods all over the Internet, but here I am going to show you how to combine everything we talked about earlier : **folders** and **URL**.
+Those two combined make a very efficient way to show to your visitor a page in his selected language without you having a headache (in fact... you can also have headache with this method, but I will not be responsible !).
+
+### The structure
+
+Our project will look like this :
+
+```
+project/
+	_drafts/
+	_includes/
+	_layouts/
+	_posts/
+		my-translated-post.md
+	_site/
+	fr/
+		_posts/
+			mon-billet-traduit.md
+		index.md
+	index.md
+```
+
+I will here take the example of a french traslated website (what a surprise !).
+
+Like you can see, this structure is the exact same structure as the one you already know ([a basic jejyll structure](https://jekyllrb.com/docs/structure/)) but with a new folder : `fr`. Our new folder, named with your [language identifier](http://www.i18nguy.com/unicode/language-identifiers.html) contain all your translatables files (all your posts, pages, drafts and other index.md). You can even translate, as you can see above, your post name (it might be something very important for SEO stuff). So, every time you write a new post or page, juste create a new file in your `fr/` (or whatever you named it) with the same path, and create the folders containing this file if they does not already exists (duh).
+
+### Front matter, matters
+
+It is what makes Jekyll really cool, and also what makes this method functionnal ! For every post or page we make we will create a unique identifier. This identifier will be used later to link our pages together so we will be able to find a translated version of the current page. I named it `i18n-link` because... why not ?
+
+So your post should look like this : `_posts/my-translated-post.md`
+
+```
+---
+title: My translated post !
+i18n-link: translated-post
+---
+
+Hey ! This is a pretty cool translated post !
+```
+
+And your translated post : `fr/_posts/mon-billet-traduit.md`
+
+```
+---
+title: Mon billet traduit !
+i18n-link: translated-post
+---
+
+Hey ! Ça c'est du post traduit ou je m'y connais pas !
+```
+
+Easy right ? For you next post what you just have to do is replacing your i18n-link by a unique new one.
+
+Your translation is now fully functionnal. Yup, really ! If you want to access your translated post what you just have to do is add a `/fr/` prefix to your URL ! But you will not want to ask your visitors to do it right ? Wouldn't it be cool to generate language buttons to access translated versions of your posts ?
+
+### Add language selection
+
+Here we go, translating post is cool. Accessing translated post via URL is also cool. But automatically display available translations for a page and create links is cooler !
+
+So let's just prepare our code for the moment : 
+
+```HTML
+<div class="lang">
+  <ul>
+    {% for post in posts %}
+      <li><a class="{{ post.lang }}" href="{{ site.base-url }}{{ post.url }}">{{ post.lang }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+```
