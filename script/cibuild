@@ -2,4 +2,4 @@
 set -e # halt script on error
 
 bundle exec jekyll build	
-htmlproofer --url-ignore /^$/ --only-4xx --check-html ./_site 
+htmlproofer --url-ignore /^$/ --only-4xx --check-html ./_site

@@ -1,12 +1,6 @@
-{% assign posts=site.posts | where:"i18n-link", page.i18n-link | sort: 'lang' %}
-
-{% if posts.size == 0 %}
-  {% assign posts=site.pages | where:"i18n-link", page.i18n-link | sort: 'lang' %}
-{% endif %}
-
 <div class="lang">
   <ul>
-    {% for postTrans in posts %}
+    {% for postTrans in postsTrans %}
       <li><a class="{{ postTrans.lang }}" href="{{ site.base-url }}{{ postTrans.url }}">{{ postTrans.lang }}</a></li>
     {% endfor %}
   </ul>
