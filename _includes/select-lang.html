@@ -6,8 +6,8 @@
 
 <div class="lang">
   <ul>
-    {% for post in posts %}
-      <li><a class="{{ post.lang }}" href="{{ site.base-url }}{{ post.url }}">{{ post.lang }}</a></li>
+    {% for postTrans in posts %}
+      <li><a class="{{ postTrans.lang }}" href="{{ site.base-url }}{{ postTrans.url }}">{{ postTrans.lang }}</a></li>
     {% endfor %}
   </ul>
 </div>
