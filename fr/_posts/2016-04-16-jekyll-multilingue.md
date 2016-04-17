@@ -27,7 +27,7 @@ C'est une fonctionnalité très intéressante pour l'internationalisation d'un s
 
 Traduire un site vers une langue différente de la langue maternelle du concepteur doit être un élément important à penser tôt dans le développement. Si le site est bien préparé pour cela, traduire des pages deviendra aussi simple que de créer un nouveau fichier par langue, contenant les ressources traduites. Le layout reste le même, seules les chaînes incluses changent d'une langue à l'autre.
 
-Dans un site rendu côté serveur, c'est le travail de la logique de créer les vues. [Symfony](https://symfony.com/) par exemple  utilise le moteur [twig](twig.sensiolabs.org/) afin de rendre les vues. Tout ce que vous avez à faire est, d'écrire les layouts, indiquer où placer les ressources traduites puis remplir des fichiers de configuration avec les chaînes afin de voir la magie opérer !
+Dans un site rendu côté serveur, c'est le travail de la logique de créer les vues. [Symfony](https://symfony.com/) par exemple  utilise le moteur [twig](http://twig.sensiolabs.org/) afin de rendre les vues. Tout ce que vous avez à faire est, d'écrire les layouts, indiquer où placer les ressources traduites puis remplir des fichiers de configuration avec les chaînes afin de voir la magie opérer !
 
 Mais comment le serveur sait qu'un visiteur parle une langue en particulier ?
 

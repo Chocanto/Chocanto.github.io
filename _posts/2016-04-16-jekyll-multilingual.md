@@ -27,7 +27,7 @@ It is a very interesting feature for internationalization...
 
 Translating your site to a different language than your maternal one might be something you should think about very early in your developpement. If you site is well prepared for it, translating your pages will be as simple as creating one file by language containing your translated resources. Your layout stay the same, only included strings will depend of the choosen language.
 
-In a server-side rendered website, it is the work of your hidden logic to build views. I can take the example of [Symfony](https://symfony.com/) who use [twig engine](twig.sensiolabs.org/) to render views. All you have to do is write your layouts, indiquate where your translated assets will be put, populate configurations files with your different assets then watch the magic appening !
+In a server-side rendered website, it is the work of your hidden logic to build views. I can take the example of [Symfony](https://symfony.com/) who use [twig engine](http://twig.sensiolabs.org/) to render views. All you have to do is write your layouts, indiquate where your translated assets will be put, populate configurations files with your different assets then watch the magic appening !
 
 But how does the server know that your visitor speak one specific language ?
 
