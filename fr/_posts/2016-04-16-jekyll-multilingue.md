@@ -1,6 +1,6 @@
 ---
 title: Créer un site multilingue avec Jekyll
-img: 1
+img: 2
 i18n-link: multilingual
 ---
 

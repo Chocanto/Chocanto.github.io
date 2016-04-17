@@ -1,6 +1,6 @@
 ---
 title: Build a multilingual website with jekyll
-img: 1
+img: 2
 i18n-link: multilingual
 ---
 
