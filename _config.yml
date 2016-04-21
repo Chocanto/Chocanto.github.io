@@ -27,7 +27,11 @@ defaults:
          lang: fr
          base-url: "/fr/"
 
-gems: ["jekyll-paginate", "github-pages"]
+gems: [
+    "jekyll-paginate",
+    "github-pages",
+    "jekyll-sitemap"
+]
 
 # For travis
 exclude: [vendor]
