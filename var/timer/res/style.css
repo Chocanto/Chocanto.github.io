@@ -1,0 +1,92 @@
+@font-face {font-family: "Helvetica Neue W01";
+    src: url("font/HelveticaNeueLTStdLt.otf");
+}
+
+body {
+    background-color: #000;
+}
+
+body.end {
+    background-color: #ff1515;
+}
+
+#countdown {
+    font-family: "Helvetica Neue W01", Monaco, Monospace;
+    font-size: 77vmin;
+    text-align: center;
+    font-weight: 600;
+    line-height: 89vh;
+    color: #fff;
+}
+
+#countdown.almost-end {
+    color: #ff8600;
+}
+
+#countdown.end {
+    color: #fff;
+}
+
+#countdown.over {
+    font-size: 39vmin;
+    line-height: 41vh;
+}
+
+#over {
+    font-family: "Helvetica Neue W01", Monaco, Monospace;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    font-size: 12vw;
+    line-height: 55vh;
+    animation: fade 2s ease infinite;
+}
+
+@keyframes fade {
+    0%{opacity: 1}
+    50%{opacity: .2}
+    100%{opacity: 1}
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    background: #fff;
+    height: 5vmin;
+    width: 5vmin;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2.5vmin;
+}
+
+.dot.fade {
+    animation: dotFade 10s linear forwards;
+}
+
+@keyframes dotFade {
+    0% {opacity: 1;}
+    100% {opacity: .1;}
+}
+
+#timerMinutes {
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#timerSeconds {
+    width: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.labelTimer {
+    color: #fff;
+    font-family: Helvetica;
+}
+
+.actions {
+    margin-top: 20px;
+}
